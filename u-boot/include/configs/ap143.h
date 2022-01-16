@@ -124,7 +124,8 @@
 						GPIO16
 	#define CONFIG_QCA_GPIO_MASK_IN		GPIO17
 
-#elif defined(CONFIG_FOR_TPLINK_WR841N_V11)
+#elif defined(CONFIG_FOR_TPLINK_WR841N_V11) ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)
 
 	#define CONFIG_QCA_GPIO_MASK_LED_ACT_L	GPIO1  | GPIO2  | GPIO3  |\
 						GPIO4  | GPIO11 | GPIO13 |\
@@ -251,6 +252,7 @@
 
 #elif defined(CONFIG_FOR_TPLINK_MR3420_V3)  ||\
       defined(CONFIG_FOR_TPLINK_WA850RE_V2) ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)  ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)  ||\
       defined(CONFIG_FOR_TPLINK_WR841N_V10) ||\
       defined(CONFIG_FOR_TPLINK_WR841N_V11) ||\
@@ -308,6 +310,7 @@
       defined(CONFIG_FOR_TPLINK_MR3420_V3)           ||\
       defined(CONFIG_FOR_TPLINK_MR6400_V1V2)         ||\
       defined(CONFIG_FOR_TPLINK_WA850RE_V2)          ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)           ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V2)           ||\
@@ -379,6 +382,7 @@
       defined(CONFIG_FOR_TPLINK_MR3420_V3)           ||\
       defined(CONFIG_FOR_TPLINK_MR6400_V1V2)         ||\
       defined(CONFIG_FOR_TPLINK_WA850RE_V2)          ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)           ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V2)           ||\
@@ -473,6 +477,7 @@
 #elif defined(CONFIG_FOR_TPLINK_MR22U_V1)     ||\
       defined(CONFIG_FOR_TPLINK_MR3420_V3)    ||\
       defined(CONFIG_FOR_TPLINK_MR6400_V1V2)  ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)    ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)    ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V1)    ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V2)    ||\
@@ -580,6 +585,7 @@
       defined(CONFIG_FOR_TPLINK_MR22U_V1)            ||\
       defined(CONFIG_FOR_TPLINK_MR3420_V3)           ||\
       defined(CONFIG_FOR_TPLINK_MR6400_V1V2)         ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)           ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V2)           ||\
@@ -650,6 +656,7 @@
       defined(CONFIG_FOR_TPLINK_MR3420_V3)           ||\
       defined(CONFIG_FOR_TPLINK_MR6400_V1V2)         ||\
       defined(CONFIG_FOR_TPLINK_WA850RE_V2)          ||\
+      defined(CONFIG_FOR_TPLINK_WR740N_V6)           ||\
       defined(CONFIG_FOR_TPLINK_WR802N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V1)           ||\
       defined(CONFIG_FOR_TPLINK_WR810N_V2)           ||\

@@ -121,6 +121,7 @@ Currently supported devices:
   - TP-Link TL-MR6400 v1, v2
   - TP-Link TL-WA850RE v2
   - TP-Link TL-WR802N
+  - TP-Link TL-WR740N v6
   - TP-Link TL-WR810N v1, v2
   - TP-Link TL-WR820N (version for Chinese market)
   - TP-Link TL-WR841N/D v9, v10, v11
@@ -186,6 +187,7 @@ More information about supported devices:
 | [TP-Link TL-WR710N v1](http://wiki.openwrt.org/toh/tp-link/tl-wr710n) | AR9331 | 8 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |
 | [TP-Link TL-WR720N v3](http://wiki.openwrt.org/toh/tp-link/tl-wr720n) | AR9331 | 4 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |
 | [TP-Link TL-WR740N v4](http://wiki.openwrt.org/toh/tp-link/tl-wr740n) | AR9331 | 4 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |
+| [TP-Link TL-WR740N v6](http://wiki.openwrt.org/toh/tp-link/tl-wr740n) | QCA9533 | 4 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |
 | [TP-Link TL-WR802N](https://wikidevi.com/wiki/TP-LINK_TL-WR802N_v1.0) | QCA9533 | 4 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |
 | [TP-Link TL-WR810N v1](https://wiki.openwrt.org/toh/tp-link/tl-wr810n) | QCA9531 | 8 MiB | 64 MiB DDR2 | 64 KiB, LZMA | RO |
 | TP-Link TL-WR810N v2 | QCA9533 | 8 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |

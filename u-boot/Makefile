@@ -739,6 +739,13 @@ tp-link_tl-wr841n_v10: qca953x_common lsdk_kernel
 	@$(call define_add,CFG_ATH_GMAC_NMACS,2)
 	@$(MKCONFIG) -a ap143 mips mips ap143 ar7240 ar7240
 
+tp-link_tl-wr740n_v6: qca953x_common lsdk_kernel
+	@$(call config_init,TP-Link TL-WR740N/D v6,tl-wr740nd-v6,4,12,1,QCA_QCA9533_SOC)
+	@$(call define_add,CONFIG_FOR_TPLINK_WR740N_V6,1)
+	@$(call define_add,CFG_ATHRS27_PHY,1)
+	@$(call define_add,CFG_ATH_GMAC_NMACS,2)
+	@$(MKCONFIG) -a ap143 mips mips ap143 ar7240 ar7240
+
 tp-link_tl-wr841n_v11: qca953x_common lsdk_kernel
 	@$(call config_init,TP-Link TL-WR841N/D v11,tl-wr841nd-v11,4,12,1,QCA_QCA9533_SOC)
 	@$(call define_add,CONFIG_FOR_TPLINK_WR841N_V11,1)
