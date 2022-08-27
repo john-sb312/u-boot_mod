@@ -1,12 +1,6 @@
 U-Boot 1.1.4 modification for routers
 ==========
 
-Ready snapshot/test images
---------------------------
-Starting from 24.09.2016, ready images, built on **Raspberry Pi 3** with **LEDE** toolchain, are available **[on my server](http://projects.dymacz.pl)**.
-
-Images are built and uploaded on FTP only when master branch in repository was updated - custom script checks this once per day. On the FTP you will find also toolchain which is used to build images.
-
 Table of contents
 -----------------
 
@@ -401,6 +395,7 @@ Currently supported FLASH types:
 
 - Winbond W25Q128 (16 MB, JEDEC ID: EF 4018)*
 - Winbond W25Q128FW (16 MB, JEDEC ID: EF 6018, 1,8 V)*
+- Winbond W25Q128JV (16MB, JEDEC ID: EF 7018)
 - Macronix MX25L128 (16 MB, JEDEC ID: C2 2018, C2 2618)
 - Spansion S25FL127S (16 MB, JEDEC ID: 01 2018)*
 - Micron N25Q128 (16 MB, JEDEC ID: 20 BA18)
