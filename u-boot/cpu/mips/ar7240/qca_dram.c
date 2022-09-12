@@ -21,6 +21,12 @@
 #include <soc/qca_soc_common.h>
 #include <soc/qca_dram.h>
 
+#if (SOC_TYPE & QCA_QCA953X_SOC)
+#include <953x.h>
+#elif (SOC_TYPE & QCA_QCA955X_SOC)
+#include <955x.h>
+#endif
+
 #define QCA_DDR_SIZE_INCREMENT	(8 * 1024 * 1024)
 
 /*
@@ -977,6 +983,18 @@ void qca_dram_init(void)
 
 	/* Enable DDR refresh and setup refresh period */
 	qca_dram_set_en_refresh();
+
+#if (SOC_TYPE & QCA_QCA953X_SOC) |\
+    (SOC_TYPE & QCA_QCA955X_SOC)
+	/*
+	 * Load power control values into PMU registers, setting bit 3
+	 * while clearing bits 1 and 2 in PMU1 register fixes ethernet
+	 * EMI issue according to sources
+	 */
+	qca_soc_reg_write(PMU1_ADDRESS, 0x633C8178);
+	qca_soc_reg_read_set(PMU2_ADDRESS, PMU2_LDO_TUNE_SET(3));
+	qca_soc_reg_read_set(PMU2_ADDRESS, PMU2_PGM_SET(1));
+#endif
 
 	/*
 	 * At this point memory should be fully configured,
