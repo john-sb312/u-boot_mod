@@ -91,6 +91,10 @@ u32 flash_init(void)
 				info->size = SIZE_8MiB;
 				#elif (CONFIG_DEFAULT_FLASH_SIZE_IN_MB == 16)
 				info->size = SIZE_16MiB;
+				#elif (CONFIG_DEFAULT_FLASH_SIZE_IN_MB == 32)
+				info->size = SIZE_32MiB;
+				#elif (CONFIG_DEFAULT_FLASH_SIZE_IN_MB == 64)
+				info->size = SIZE_64MiB;
 				#else
 					#error "Not supported CONFIG_DEFAULT_FLASH_SIZE_IN_MB value!"
 				#endif
